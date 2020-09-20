@@ -18,7 +18,25 @@ nama_belakang = "Putra"
 nama_lengkap = nama_depan + " " + nama_tengah+" "+ nama_belakang
 print (nama_lengkap)
 
-a1 = 10
-a2 = 3
-print (a1*a2)
-print (oct(a1*a2))
+class Kipas(object):
+    def __init__ (self, merk, warna):
+        self.merk = merk
+        self.warna = warna
+
+    def muter(self):
+        print("kipasnya muter")
+
+    def kecepatan(self):
+        print("kecepatan kipas ademm")
+
+    def getmerk(self):
+        print("merk saya adalah " + self.merk)
+
+    def getwarna(self):
+        print("warna saya adalah " + self.warna + " dong")
+
+cosmos = Kipas("Cosmos", "biru")
+cosmos.muter()
+cosmos.getmerk()
+cosmos.getwarna()
+cosmos.kecepatan()
